@@ -2,6 +2,6 @@
 import { galleryItems } from './gallery-items';
 // Change code below this line
 
-const one = 0;
+const oneTime = 0;
 
 console.log(galleryItems);
