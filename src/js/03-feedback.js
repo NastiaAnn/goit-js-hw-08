@@ -11,6 +11,7 @@ function handleFormClick(event) {
   event.preventDefault();
   formData[event.target.name] = event.target.value;
   localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(formData));
+  console.log(formData);
 }
 
 function handleFormSubmit(event) {
@@ -25,6 +26,7 @@ function handleFormSubmit(event) {
       Email: `${emailEl}`,
       Message: `${messageEl}`,
     };
+    console.log(inputValue);
     event.currentTarget.reset();
     localStorage.removeItem(LOCALSTORAGE_KEY);
   }
